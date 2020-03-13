@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -66,23 +66,75 @@ p {
     line-height: 1.4;
 }
 
+
+/*MY INDEX-HOME PAGE CSS STYLING CODE STARTS HERE*//*MY CSS CODE STARTS HERE*//*MY CSS CODE STARTS HERE*/
+
+
 .container {
-    width: 800px;
+    width: 880px;
     margin: 0 auto;
 }
+
+header{
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav{
+	margin-top: 45px;
+	width: 620px;
+	display: flex;
+	justify-content: space-between;
+}
+
+header nav a{
+	font-size: 14px;
+	color: black;
+	text-decoration: none;
+}
+
+header nav a:hover{
+	text-decoration: none;
+	color: red;
+
+}
+
+header nav a:first-child{
+	margin-left: 25px;
+}
+
+header .company-logo{
+	margin-top: 25px;
+	display: flex;
+	align-items: center;
+}
+
+.jumbo{
+	width: 880px;
+	margin-top: 25px;
+	display: flex;
+	align-items: center;
+}
+
+
+
+
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
+		margin-top: 25px;
     border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .middle-content {
@@ -112,6 +164,50 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box.box1{
+    background: teal;
+}
+
+.middle-content .boxes .box.box2{
+	background: gold;
+}
+
+.middle-content .boxes .box.box3{
+	background: cadetblue;
+}
+
+.middle-content .boxes .box.box4{
+	background: coral;
+}
+
+.middle-content .boxes .box.box5{
+	background: crimson;
+}
+
+.middle-content .boxes .box.box6{
+	background: forestgreen;
+}
+
+.middle-content .boxes .box.box7{
+	background: darkorchid;
+}
+
+.middle-content .boxes .box.box8{
+	background: hotpink;
+}
+
+.middle-content .boxes .box.box9{
+	background: indigo;
+}
+
+.middle-content .boxes .box.box10{
+	background: dodgerblue;
+}
+
+
+
+
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -125,6 +221,10 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+
+
+
 
 footer {
     width: 100%;
@@ -143,4 +243,73 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+footer nav a:hover{
+	color: red;
+}
+
+
+
+
+/*MY ABOUT PAGE CSS STYLING CODE STARTS HERE*//*MY CSS CODE STARTS HERE*//*MY CSS CODE STARTS HERE*/
+
+.container.about-page{
+	width: 880px;
+	margin: 0 auto;
+}
+
+.jumbo-about{
+	width: 880px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.about-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.about-text{
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 1px dashed black;
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+	margin-left: 25px;
+}
+
+.about-content .info{
+	display: flex;
+	flex-wrap: wrap;
+	width: 370px;
+	margin: 20px 0;
+	border-bottom: 1px dashed black;
+	padding-bottom: 25px;
+	margin-bottom: 40px;
+}
+
+.about-content img{
+	padding-bottom: 14px;
+}
+
+.about-content .info button{
+	padding: 10px 18px;
+	margin-top: 20px;
+	cursor: pointer;
+	background: white;
+	border-radius: 10px;
+	border: 2px solid black;
+	font-size: 13px;
+}
+
+.about-content .info button:hover{
+	background: black;
+	color: white;
+}
+
+.bottom-section-text{
+	padding-bottom: 40px;
 }
